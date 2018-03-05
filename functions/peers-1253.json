@@ -1,6 +1,1 @@
-[
-  {
-    "ip" : "10.0.7.208:7070",
-    "available" : "true"
-  }
-]
+[{"ip":"localhost:7070","available":"true"}]
