@@ -1,7 +1,7 @@
 const request = require('request')
 
 function post(DESTINATION, DATA) {
-  console.log('destination:', DESTINATION);
+  console.log('sending post request to : ', DESTINATION);
   return new Promise(function(resolve, reject) {
       request.post({
         uri: DESTINATION,
@@ -9,7 +9,7 @@ function post(DESTINATION, DATA) {
       }, function() {
         resolve(true);
       }).on('error', function(err) {
-        console.log('POST Something happend');
+        console.log('post request error: ', err);
       })
   })
 }
